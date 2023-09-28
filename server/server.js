@@ -9,7 +9,7 @@ const app = express();
 
 const MONGO_URI = "mongodb://localhost:27017/lyrical";
 if (!MONGO_URI) {
-  throw new Error("You must provide a valid Mongo DB URI");
+  throw new Error("You must provide a valid Mongo DB URI!");
 }
 
 mongoose.Promise = global.Promise;
@@ -17,7 +17,7 @@ mongoose.connect(MONGO_URI);
 mongoose.connection
   .once("open", () => console.log("The connection to Mongo DB is open."))
   .on("error", (error) =>
-    console.log("The connection to Mongo DB encountered an error.", error)
+    console.error("The connection to Mongo DB encountered an error.", error)
   );
 
 app.use(bodyParser.json());
