@@ -1,2 +1,7 @@
 node_modules
 .DS_STORE
+
+# Integrated Development Environment (IDE) files
+.idea/
+.vscode/
+
