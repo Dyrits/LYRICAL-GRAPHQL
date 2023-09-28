@@ -5,6 +5,3 @@ node_modules
 .idea/
 .vscode/
 
-# Docker volumes
-.mongo
-

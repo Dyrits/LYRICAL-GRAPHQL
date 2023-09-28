@@ -8,7 +8,10 @@
     "url": "https://github.com/StephenGrider/Lyrical-GraphQL"
   },
   "scripts": {
-    "dev": "nodemon index.js --ignore client"
+    "mongo:start": "docker-compose up -d",
+    "mongo:stop": "docker-compose down",
+    "mongo:reset": "docker-compose down -v && docker-compose up -d",
+    "development": "nodemon index.js --ignore client"
   },
   "author": "",
   "license": "ISC",
