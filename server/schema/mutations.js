@@ -9,7 +9,7 @@ const LyricType = require("./LyricType");
 const mutation = new GraphQLObjectType({
   name: "Mutation",
   fields: {
-    addSong: {
+    createSong: {
       type: SongType,
       args: {
         title: { type: GraphQLString }
@@ -22,7 +22,7 @@ const mutation = new GraphQLObjectType({
       type: SongType,
       args: {
         content: { type: GraphQLString },
-        songId: { type: GraphQLID }
+        song: { type: GraphQLID }
       },
       resolve(parentValue, { content, songId }) {
         return Song.addLyric(songId, content);
