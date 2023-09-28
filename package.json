@@ -11,7 +11,8 @@
     "mongo:start": "docker-compose up -d",
     "mongo:stop": "docker-compose down",
     "mongo:reset": "docker-compose down -v && docker-compose up -d",
-    "development": "nodemon index.js --ignore client"
+    "development": "nodemon index.js --ignore client",
+    "prettier": "prettier --write ./client/**/*.js ./server/**/*.js"
   },
   "author": "",
   "license": "ISC",
@@ -43,6 +44,7 @@
     "webpack-dev-middleware": "^1.9.0"
   },
   "devDependencies": {
-    "nodemon": "^3.0.1"
+    "nodemon": "^3.0.1",
+    "prettier": "^3.0.3"
   }
 }
