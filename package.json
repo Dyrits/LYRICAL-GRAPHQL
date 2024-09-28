@@ -12,7 +12,7 @@
     "mongo:stop": "docker-compose down",
     "mongo:reset": "docker-compose down -v && docker-compose up -d",
     "nodemon": "nodemon index.js --ignore client",
-    "prettier": "prettier --write ./client/**/*.js ./server/**/*.js"
+    "format": "prettier --write ./client/**/*.js ./server/**/*.js"
   },
   "author": "",
   "license": "ISC",

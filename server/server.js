@@ -21,7 +21,7 @@ mongoose.connection
   );
 
 app.use(bodyParser.json());
-app.use(
+app.use("/graphql",
   expressGraphQL({
     schema,
     graphiql: true
