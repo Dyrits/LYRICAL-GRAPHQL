@@ -11,6 +11,10 @@ A GraphQL practice application with a React client and an Express GraphQL server
 - MongoDB (Docker Compose)
 - Webpack
 
+## Maintenance Status
+
+This project is retained as a course reference and is not actively maintained. Dependency vulnerabilities remain unresolved. Dependency fixes that require breaking changes have not been applied; do not treat this repository as security-clean or deploy it without a fresh review.
+
 ## Getting Started
 
 ### Prerequisites
